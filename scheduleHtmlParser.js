@@ -124,7 +124,7 @@ function scheduleHtmlParser(html) {
 
 
               if (count != 1) {
-                if (info.length == 8 * count) {
+                if (info.length == 9 * count - 2) {
                   for (i = 0; i < count * 4 - 1; i++) {
                     info[i] = ""
                   }
