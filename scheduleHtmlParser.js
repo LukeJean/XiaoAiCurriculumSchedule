@@ -144,7 +144,11 @@ function scheduleHtmlParser(html) {
                   info[i] = ""
                 }
               } else {
-                for (i = 0; i < 3; i++) {
+                if(info[3].substr(0, 2) == "体育"){
+                  info[3] = info[3]+info[4]
+                  info[4] = "" 
+                }
+                for(i = 0;i<3;i++){
                   info[i] = ""
                 }
               }
